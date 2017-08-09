@@ -1,18 +1,19 @@
-# Zencart - Pin Payments Integration
+# Zencart integration with [Pin Payments](https://pin.net.au)
 
 ## Installing 
 
 **Before you proceed, make a backup of your database. Installation is done at your own risk.**
 
-Clone this repository to your computer or download one of the tarballs from the releases section. 
+Clone this repository to your computer or download one of the tarballs from the [release](https://github.com/montdidier/zencart-pinpayments/releases) section.
 
 Using ftp or a similar method, upload all the files from the *files* directory to your store root.
 
-One required core file has been modified (ajax.php). You can just replace the file in your installation of Zen Cart or merge the changes if necessary.
+A number of core files have been modified within this integration and consideration should be made for each (i.e. if modified by another module or integration). Changes made for this integration have been clearly commented. If you do need to merge changes rather than simply overwrite the distribution files you can use a tool such as [DiffMerge](https://sourcegear.com/diffmerge/).
 
-One core file was modified (admin/orders.php) to allow issuing refunds directly from the admin section. Uploading this file is optional since refunds can also be issued from the Pin Payments merchant dashboard. Make sure you use the file that matches your Zen Cart version. In case you have made any changes to this file, make sure you merge it carefully (you can use a tool such as DiffMerge). All changes have been clearly commented. Otherwise, you can simply overwrite. 
+1. ajax.php - This file is required 
+2. admin/orders.php - to allow issuing refunds directly from the admin section. Make sure you use the version that matches you Zencart installion. Optional as refunds can be issued directly from the Pin Payments merchant dashboard.
 
-After all the files are in place, log in to your admin section and navigate to admin->Modules->Payment. Locate *Pin Payments* and select it, then click on the "install" button on the right hand side. Enter you transaction key (obtained from the Pin Payments dashboard). Change any other settings as required and click "update".
+After all desired files are in place, log in to your Zencart admin section and navigate to admin->Modules->Payment. Locate *Pin Payments* and select it, then click on the "install" button on the right hand side. Enter you transaction key (obtained from the Pin Payments dashboard). Change any other settings as required and click "update".
 
 In case installation fails to add the required database tables, you will have to install the tables manually. Log in to your admin section and go to Tools->Install SQL Patches. Open the "mysql_updates/pin_payments.sql that comes with this plugin, copy the content, paste it in the admin section and click the "send" button. NOTE: do NOT do this if you're not getting an error message instructing you to do that.
 
