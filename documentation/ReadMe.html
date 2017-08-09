@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Pin Payments</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+  <div class="container">
+	
+		<h3 class="center alt">Pin Payments Documentation v1.1</h3>
+		
+		<hr>
+		
+		<h1 class="center">Pin Payments with Tokens</h1>
+		
+		<div class="borderTop">
+			<div class="span-8 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Version: 1.1
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-10 last">
+				<p class="prepend-top append-0">Thank you for downloading this plugin. Please note that this plugin is installed and used at your own risk. If you are unsure of how to complete the installation procedure documented below, please contact us for assistance. Pin Payments takes no responsibility for problems related to the installation or use of this plugin.</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#install">Installation</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#issues">Common Issues</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#license">License</a></li>
+			
+		</ol>
+		
+<hr>
+		
+		<h3 id="install"><strong>Installing</strong> - <a href="#toc">top</a></h3>
+		<p><strong>Before you proceed, make a backup of your database. Installation is done at your own risk.</strong></p>
+                <p>Unzip the files from &quot;files&quot; directory to your computer. Connect to your server via FTP. Simply upload all file from "new_files" directory to your store root</p>
+                <p>One required core file was modified (ajax.php). You can just replace the file according to your version of Zen Cart, or merge the changes.</p>
+                <p>One core file was modified (admin/orders.php) to allow issuing refunds directly from the admin section. Uploading this file is optional since refunds can also be issued from the Pin Merchant Dashboard. Make sure you use the file that matches your Zen Cart version. In case you have made any changes to this file, make sure you merge it carefully (you can use a tool like <a href="http://winmerge.org/?lang=en" target="_blank">WinMerge</a>). All changes have been commented. Otherwise, you can simply overwrite.</p>
+<p>After all files are in place, log in to your admin section and go to admin-&gt;Modules-&gt;Payment, locate "Pin Payments", click on it and click the &quot;install&quot; button on the right. Enter your Transaction Key (obtained from Pin Payments), change other settings as required and click "update".</p>
+<p><strong>In case installation fails to add required database tables</strong>, you will have to install the tables manually. Log in to your admin section and go to Tools->Install SQL Patches. Open the "mysql_updates/pin_payments.sql that comes with this plugin, copy the content, paste it in the admin section and click the "send" button. <strong>NOTE: </strong>do NOT do this if you're not getting an error message instructing you to do that.</p>
+<p>Your module is now installed and ready for use.</p>
+<p><strong>Keep in mind this module requires a secure connection (SSL certificate) to work.</strong></p>
+<hr>
+
+<h3 id="usage"><strong>Usage</strong> - <a href="#toc">top</a></h3>
+<p>Accept credit and debit cards, face‑to‑face or across the world. Simple signup with same-day activation. Visit <a href="https://pin.net.au/" target="_blank">https://pin.net.au/</a> for more information.</p>
+<p>This plugin has a built-in support for Tokens - the card tokens API allows you to securely store credit card details in exchange for a card token. This card token can then be used to create a single charge, or to create multiple charges over time.</p>
+<hr>
+        
+        <h3 id="issues"><strong>Common Issues</strong> - <a href="#toc">top</a></h3>
+        
+        <p>None known.</p>
+
+        <hr>
+        
+    <h3 id="support"><strong>Support</strong> - <a href="#toc">top</a></h3>
+        
+      <p>This plugin comes with limited support. All bugs will be fixed free of charge as soon as possible after receiving notification. Bugs do not include new feature requests nor feature enhancements, but only refer to existing features that don't work properly. Any code alterations made to any of the plugin files make the support guarantee void.</p>
+    
+      <hr>
+      
+<h3 id="license"><strong>License</strong> - <a href="#toc">top</a></h3>
+<p>The plugin is licensed under GPL.</p>
+
+<hr>
+		
+		<p>Once again, thank you for downloading this plugin. As I said at the beginning, I'd be glad to help you if you have any questions relating to this plugin. </p> 
+		
+		<p class="append-bottom alt large"><strong>Pin Payments</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

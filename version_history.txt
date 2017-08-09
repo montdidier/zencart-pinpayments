@@ -1,0 +1,6 @@
+version 1.1 - 2016/Nov/09
+ - fixed problem with amounts greater than 1000
+ - SQL patch built-in to the module installer, no need to run it manually
+ - moved ajax.php to modified_files with corrected versions
+
+---------------------------
