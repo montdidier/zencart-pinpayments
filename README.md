@@ -6,7 +6,7 @@
 
 Clone this repository to your computer or download one of the tarballs from the [release](https://github.com/montdidier/zencart-pinpayments/releases) section.
 
-Using ftp or a similar method, upload all the files from the *files* directory to your store root.
+Using ftp or a similar method, upload all the files from the *files/new_files* directory to your store root.
 
 A number of core files have been modified within this integration and consideration should be made for each (i.e. if modified by another module or integration). Changes made for this integration have been clearly commented. If you do need to merge changes rather than simply overwrite the distribution files you can use a tool such as [DiffMerge](https://sourcegear.com/diffmerge/).
 
