@@ -1,4 +1,4 @@
-# Zencart integration with [Pin Payments](https://pin.net.au)
+# Zencart integration with [Pin Payments](https://pinpayments.com)
 
 ## Installing 
 
