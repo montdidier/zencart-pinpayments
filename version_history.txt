@@ -1,7 +1,7 @@
 version 1.1.2 - 2018.05.11
  - Updated embedded certificate bundle to support latest trusted root certificates from Certificate Authorities
  
-version 1.1 - 2016/Nov/09
+version 1.1 - 2016.11.09
  - fixed problem with amounts greater than 1000
  - SQL patch built-in to the module installer, no need to run it manually
  - moved ajax.php to modified_files with corrected versions
