@@ -16,8 +16,8 @@ use Guzzle\Http\Message\RequestInterface;
  *
  * The API has two endpoint host names:
  *
- * * api.pin.net.au (live)
- * * test-api.pin.net.au (test)
+ * * api.pinpayments.com (live)
+ * * test-api.pinpayments.com (test)
  *
  * The live host is for processing live transactions, whereas the test
  * host can be used for integration testing and development.
@@ -29,7 +29,7 @@ use Guzzle\Http\Message\RequestInterface;
  * flag is set then the Test Endpoint is being used.
  *
  * @see \Omnipay\Pin\Gateway
- * @link https://pin.net.au/docs/api
+ * @link https://pinpayments.com/docs/api
  */
 abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
 {
@@ -40,14 +40,14 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
      *
      * @var string URL
      */
-    protected $testEndpoint = 'https://test-api.pin.net.au/';
+    protected $testEndpoint = 'https://test-api.pinpayments.com/';
 
     /**
      * Live Endpoint URL
      *
      * @var string URL
      */
-    protected $liveEndpoint = 'https://api.pin.net.au/';
+    protected $liveEndpoint = 'https://api.pinpayments.com/';
 
     /**
      * Get secret key
