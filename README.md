@@ -23,7 +23,7 @@ Your integration is now installed and ready for use.
 
 ## Usage
 
-Accept credit and debit cards, face‑to‑face or across the world. Simple signup with same-day activation. Visit https://pin.net.au/ for more information.
+Accept credit and debit cards, face‑to‑face or across the world. Simple signup with same-day activation. Visit https://pinpayments.com for more information.
 
 This plugin has a built-in support for Tokens - the card tokens API allows you to securely store credit card details in exchange for a card token. This card token can then be used to create a single charge, or to create multiple charges over time.
 
