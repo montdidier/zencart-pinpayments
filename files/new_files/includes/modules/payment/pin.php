@@ -636,9 +636,9 @@ class pin extends base {
         if ($order_time == '') $order_time = date("F j, Y, g:i a");
 
         if (MODULE_PAYMENT_PIN_TESTMODE == 'Live' || !strstr(MODULE_PAYMENT_PIN_TESTMODE, 'Test')) {
-            $this->form_action_url = 'https://api.pin.net.au';
+            $this->form_action_url = 'https://api.pinpayments.com';
         } else {
-            $this->form_action_url = 'https://test-api.pin.net.au';
+            $this->form_action_url = 'https://test-api.pinpayments.com';
         }
         $response['url'] = $this->form_action_url;
 
